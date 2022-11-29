@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        @font-face {
+            font-family: 'logo';
+            src: url('fonte1.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+
+        }
+        header {
+            padding-top: 40px;
+            background-color: rgb(165, 0, 187);
+            background-image: linear-gradient(rgb(165, 0, 187), rgb(179, 7, 202));
+            margin: 5px;
+            min-height: 80px;
+            text-align: left;
+            border-radius: 10px;
+            color: white;
+        }
+
+        header > h1 {
+            font-family: 'logo';
+            text-align: center;
+            color: black;
+            padding-bottom: 20px;
+        }
+
+        nav {
+            background-color: rgb(202, 67, 255);
+            color: white;
+            padding: 10px;
+            box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.507);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        p {
+            margin: 15px 0px;
+        }
+
+        h1 {
+            padding-left: 10px;
+            text-align: left;
+        }
+
+
+
+        nav > a {
+            color: black;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none; 
+            font-weight: bold;  
+            border-radius: 10px;
+            transition-duration: .5s;
+        }
+
+        
+        nav > a:hover {
+            background-color:rgb(214, 109, 255) ;
+            color: azure;
+        }
+        section#assunto {
+            padding-bottom: 20px;
+            
+            text-align: center;
+            justify-content: center;
+        }
+
+        main {
+            
+            padding-top: 40px;
+            margin: 10px;
+            margin: 5px;
+            min-height: 80px;
+            
+            
+        }
+
+        
+
+        div.video {
+            background-color: blueviolet;
+            margin: 5px ;
+            padding: 10px;
+            padding-bottom: 30%;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.507);
+        }
+
+        div.video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            right: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+        article {
+            background-color: white;
+            text-align: center;
+            padding: auto;
+            border-radius: 0px 10px;
+            box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.514);
+        }
+        aside {
+            text-align: right;
+            padding-right: 10px;
+        }
+        footer {
+            background-color: black;
+            color: bisque;
+            text-align: center;
+            padding: 1px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site para criar sites</h1>
+        <nav>
+            <a href="https://www.dafont.com/pt/theme.php?cat=109" target="_blank">Fontes</a>
+            <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank">Paleta de Cores</a>
+            <a href="https://staart.com/" target="_blank">Staart Grupo Primo</a>
+            <a href="https://www.youtube.com/@CursoemVideo" target="_blank">Curso em Video</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            
+                <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/xS2D9x8odoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            
+        </section>
+        <section id="noticias">
+            <article>
+                <h1>Sobre</h1>
+                <p>Projetei esse site para treinar e usar de repositorio para criação de meus sites, com intuito de ter as ferramentas e cursos nas quais posso consultar e utilizar na hora da produção em um site</p>
+                <aside><br> Escrito por Alexander</aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo curso em video
+            <br>
+           Qualquer duvida entrar em contato comigo. 
+        </p>
+    </footer>
+    
+</body>
+</html>
