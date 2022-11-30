@@ -71,29 +71,29 @@ section.imagem {
 }
 
 section#img01 {
-    background-image: url('../This\ is\ War.gif');
+    background-image: url('../Imagens/This\ is\ War.gif');
     background-position: center ;
     background-size: cover;
 }
 section#img02 {
-    background-image: url('../gritogif.gif');
+    background-image: url('../Imagens/gritogif.gif');
     background-position: center ;
     background-size: cover;
 }
 
 section#img03 {
-    background-image: url("../seringas.gif");
+    background-image: url("../Imagens/seringas.gif");
     background-position: center ;
     background-size: cover;
 }
 
 section#img04 {
-    background-image: url('../virusgif.gif');
+    background-image: url('../Imagens/virusgif.gif');
     background-position: center ;
     background-size: cover;
 }
 section#img05 {
-    background-image: url('../Olivergif.gif');
+    background-image: url('../Imagens/Olivergif.gif');
     background-position: center ;
     background-size: cover;
 }
