@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        caption {
+            background-color: blanchedalmond;
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População do brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td>45 919 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>45 919 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>34 898 000</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio grande do Sul</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio grande do norte</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td>45 919 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>45 919 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>34 898 000</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio grande do Sul</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio grande do norte</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>000 000 000</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>000 000 000</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <th scope="row">total de habitantes</th>
+            <td>1000000</td>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
