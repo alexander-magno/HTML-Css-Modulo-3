@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+           
+        }
+        h1 {
+            background-color: aqua;
+            height: 150px;
+            text-align: center;
+            border-radius: 0px 0px 20px 20px;
+            border: 2px solid black;
+            box-shadow: 2px 2px rgb(59, 58, 58);
+        }
+
+        form {
+            height: 50%;
+            padding: 100px;
+            text-align: center;
+            font-size: 20px;
+
+        }
+        fieldset {
+            text-align: left;
+            padding: 15px;
+        }
+        legend {
+            text-align: center;
+        }
+
+
+
+        input#teste {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px 10px;
+            background-color: white;
+            text-align: center;
+        }
+
+        input#teste:hover {
+            background-color: aqua;
+            box-shadow: 1px 1px rgb(66, 66, 66);
+        }
+        footer {
+            background-color: aqua;
+            font-size: larger;
+            text-align: center;
+            height: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" placeholder="Nome Completo" required maxlength="30" required>
+            </p>
+            <p>
+                <label for="imedia">Media</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required>
+            </p>
+            <p>
+                <label for="imes">Periodo Letivo</label>
+                <input type="month" name="mes" id="imes">
+            </p>
+            <p>
+                <label for="iemail"> Email</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" pattern="^\(\{2}\)\d{4,5}-\d{4}$" required>
+            </p>
+        </fieldset>
+        <p>
+            <input id="teste" type="submit" value="Enviar">
+            <input id="teste" type="reset" value="Limpar">
+        </p>
+
+
+
+    </form>
+    <footer>
+        <p>Criando formularios</p>
+    </footer>
+    
+</body>
+</html>
