@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmax" value="M"><label for="isxmax">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Linguagem de Programação favorita</legend>
+            <input type="radio" name="linguagem" id="iphp" value="php"><label for="iphp">Php</label> <!-- no caso de input checkbox, para que na caixa so possa ter um opção a ser marcada voce deve colocar o mesmo name="" em todas as opções-->
+            <input type="radio" name="linguagem" id="ipython" value="python"><label for="ipython">Python</label><!--Sempre usar o label com o for="" do mesmo nome do id="" para que no celular a pessoa possa clicar no nome para selecionar a caixa para marcar-->
+            <input type="radio" name="linguagem" id="iJS" value="js"><label for="iJS">JavaScript</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas" >Basquete</label> <br>
+            <input type="checkbox" name="esbas" id="iesfut"><label for="iesfut"> Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esbas" id="ieste"> <label for="ieste">Tenis</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
